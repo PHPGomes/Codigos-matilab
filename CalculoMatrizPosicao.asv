@@ -1,0 +1,23 @@
+%% Calculos Posição
+
+%% Clear
+clear
+clc
+
+%% Criação Matriz Posição frame B
+pxb = 1;
+pyb = 2;
+pzb = 3;
+Posb = [pxb;pyb;pzb]
+
+%% Criação Matriz Posição ponto P em relação frame B
+pxpb = 1;
+pypb = 2;
+pzpb = 3;
+Posb = [pxpb;pypb;pzpb]
+
+%% Calculo Posição P em relação a A
+
+
+
+
