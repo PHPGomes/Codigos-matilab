@@ -1,4 +1,4 @@
-%% Calculo Deslocamento + Rotação Frame (Trasnformada Homogênia)
+%% Calculo Deslocamento + Rotação Frame 
 
 %% CLEAR
 clear
@@ -20,16 +20,16 @@ Ry = [cos 0 sin ; 0 1 0 ; -sin 0 cos];
 Rz = [cos -sin 0 ; sin cos 0 ; 0 0 1];
 
 % Posição do ponto em relação ao frame B
-pxb = 0;
-pyb = 2;
+pxb = 3;
+pyb = 7;
 pzb = 0;
 posPB = [pxb;pyb;pzb];
 
 % Origem de B em relação a A
-PxBA
-PyBA
-PzBA
-PosBA = [PxBA;PyBA;PzBA]
+PxBA = 10;
+PyBA = 5;
+PzBA = 0;
+PosBA = [PxBA;PyBA;PzBA];
 %% Ponto em relação a A com rotação em X
 
 Pa = Rx*posPB + PosBA
