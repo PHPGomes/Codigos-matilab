@@ -1,12 +1,11 @@
-%% Calculo Rotação e Posição Frame Fixo
+%% Calculo Deslocamento + Rotação Frame (Trasnformada Homogênia)
 
 %% CLEAR
 clear
 clc
 
-%% Caso 1:
-% Rotação em um eixo + posição dada em relação ao frame B (A rotacionado)
-% e quero descobrir em relação a A (frame inicial)
+%% Caso 3:
+% Rotação e deslocamento de um frame + posição dada em relação ao frame B e quero descobrir em relação a A 
 
 % angulo de rotacao
 teta = 30;
@@ -26,12 +25,17 @@ pyb = 2;
 pzb = 0;
 posPB = [pxb;pyb;pzb];
 
+% Origem de B em relação a A
+PxBA
+PyBA
+PzBA
+PosBA = [PxBA;PyBA;PzBA]
 %% Ponto em relação a A com rotação em X
 
-Pa = Rx*posPB
+Pa = Rx*posPB + PosBA
 %% Ponto em relação a A com rotação em Y
 
-Pa = Ry*posPB
+Pa = Ry*posPB + PosBA
 %% Ponto em relação a A com rotação em Z
 
-Pa = Rz*posPB
+Pa = Rz*posPB + PosBA
