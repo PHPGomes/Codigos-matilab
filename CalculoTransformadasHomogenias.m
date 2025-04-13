@@ -48,15 +48,15 @@ Pa = Trans*vp
 
 %% Criação Matriz De Transformação Homogênea 3D (Rotação + Translação)
 % angulo de rotacao
-teta = 30;
+teta = 35;
 
 % CALCULO SIN E COS
 sin = sind(teta);
 cos = cosd(teta);
 
 % Dados de translação
-x = 10;
-y = 5;
+x = 0;
+y = 0;
 z = 0;
 w = 1; %Fator de escalamento (normalmente usar 1)
 
@@ -66,8 +66,8 @@ THy = [cos 0 sin x;0 1 0 y;-sin 0 cos z;0 0 0 w];
 THz = [cos -sin 0 x;sin cos 0 y; 0 0 1 z;0 0 0 w];
 
 % Vetor Posição do ponto em relação ao frame B
-pxb = 3;
-pyb = 7;
+pxb = 500;
+pyb = 0;
 pzb = 0;
 posPB = [pxb;pyb;pzb;1];
 
