@@ -4,8 +4,7 @@
 clear
 clc
 
-%% Caso 3:
-% Rotação e deslocamento de um frame + posição dada em relação ao frame B e quero descobrir em relação a A 
+%% Rotação ou translação de um frame + posição dada em relação ao frame B e quero descobrir em relação a A 
 
 % angulo de rotacao
 teta = 90;
