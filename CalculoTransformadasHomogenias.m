@@ -60,7 +60,7 @@ y = 0;
 z = 0;
 w = 1; %Fator de escalamento (normalmente usar 1)
 
-% Criação Matriz De Transformação Homogênea 3D (Arrumar)
+% Criação Matriz De Transformação Homogênea 3D
 THx = [1 0 0 x;0 cos -sin y;0 sin cos z;0 0 0 w];
 THy = [cos 0 sin x;0 1 0 y;-sin 0 cos z;0 0 0 w];
 THz = [cos -sin 0 x;sin cos 0 y; 0 0 1 z;0 0 0 w];
