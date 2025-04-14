@@ -27,11 +27,10 @@ pzb = 0;
 posPB = [pxb;pyb;pzb];
 
 %% Ponto em relação a A com rotação em X
-
 Pa = Rx*posPB
+
 %% Ponto em relação a A com rotação em Y
-
 Pa = Ry*posPB
-%% Ponto em relação a A com rotação em Z
 
+%% Ponto em relação a A com rotação em Z
 Pa = Rz*posPB
