@@ -1,0 +1,20 @@
+%% Translacao Matriz Referencia
+
+%% Clear
+clear
+clc
+
+%% Resolvendo
+
+% Matriz Referencia
+b = [0 1 0 2;1 0 0 4;0 0 -1 6; 0 0 0 1];
+xb = b(1,4);
+yb = b(2,4);
+zb = b(3,4);
+
+% Matriz Deslocamento
+d = [5;2;6];
+xd = d(1,1);
+yd = d(2,1);
+zd = d(3,1);
+
