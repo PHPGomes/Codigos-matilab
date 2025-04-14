@@ -33,6 +33,11 @@ qz = 0;
 % Criação Matriz Translação
 Trans = [1 0 0 qx;0 1 0 qy; 0 0 1 qz; 0 0 0 1];
 
+% QUESTÃO 13
+
+B = [0 1 0 1; 1 0 0 1;0 0 -1 1; 0 0 0 1]; % Matriz Referencia
+R = Ry*Rz*B*Trans*Rx; % Eq de mov
+disp(R)
 %% Vetor rotação em X
 Pa = Rx*vp
 

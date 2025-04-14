@@ -8,7 +8,7 @@ clc
 % Rotação e deslocamento de um frame + posição dada em relação ao frame B e quero descobrir em relação a A 
 
 % angulo de rotacao
-teta = 30;
+teta = 90;
 
 % CALCULO SIN E COS
 sin = sind(teta);
@@ -21,21 +21,21 @@ Rz = [cos -sin 0 ; sin cos 0 ; 0 0 1];
 
 % Posição do ponto em relação ao frame B
 pxb = 3;
-pyb = 7;
+pyb = 5;
 pzb = 0;
 posPB = [pxb;pyb;pzb];
 
 % Origem de B em relação a A
-PxBA = 10;
-PyBA = 5;
-PzBA = 0;
+PxBA = -1;
+PyBA = -1;
+PzBA = 1;
 PosBA = [PxBA;PyBA;PzBA];
 %% Ponto em relação a A com rotação em X
 
 Pa = Rx*posPB + PosBA
 %% Ponto em relação a A com rotação em Y
 
-Pa = Ry*posPB + PosBA
+Pa = Ry*posPB + PosBA 
 %% Ponto em relação a A com rotação em Z
 
 Pa = Rz*posPB + PosBA
