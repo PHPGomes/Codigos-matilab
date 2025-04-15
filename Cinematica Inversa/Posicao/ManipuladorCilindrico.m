@@ -5,7 +5,7 @@ clear
 clc
 
 %% Matriz Cilíndrica
-T = [1 0 0 1;0 1 0 2;0 0 1 3;0 0 0 1]; %Colocar a Matriz dada aqui
+T = [0 -1 0 214.20;0 0 1 589.62;-1 0 0 1100;0 0 0 1]; %Colocar a Matriz dada aqui
 
 %% Parametros da Matriz
 x = T(1,4);
@@ -20,5 +20,5 @@ disp('r:');
 disp(r);
 disp('teta:');
 disp(teta);
-disp('q3:');
+disp('L:');
 disp(q3);

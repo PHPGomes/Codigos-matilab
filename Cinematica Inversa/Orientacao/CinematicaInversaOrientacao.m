@@ -9,7 +9,7 @@ clc
 
 %% Matriz Matriz de rotação (ou extraída de matriz homogênea)
 
-R = [0.527 -0.574 0.628 4;0.369 0.819 0.439 6;-0.766 0 0.643 9; 0 0 0 1];
+R = [0 -1 0 214.20;0 0 1 589.62;-1 0 0 1100;0 0 0 1];
 
 %% Parametros da Matriz
 
@@ -20,6 +20,8 @@ alpha = atan2d(R(3,2), R(3,3));                     % roll
 gamma = atan2d(R(2,1), R(1,1));                     % yaw
 
 
-fprintf('Roll (α)  = %.2f°\n', alpha);
-fprintf('Pitch (β) = %.2f°\n', beta);
 fprintf('Yaw (γ)   = %.2f°\n', gamma);
+fprintf('Pitch (β) = %.2f°\n', beta);
+fprintf('Roll (α)  = %.2f°\n', alpha);
+
+
