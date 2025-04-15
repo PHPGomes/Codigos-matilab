@@ -8,9 +8,9 @@ clear
 clc
 
 %% Parametros (3x3)
-ax = 0; % Ângulo de rotação em X
-ay = 0; % Ângulo de rotação em Y
-az = 0; % Ângulo de rotação em Z
+ax = 30; % Ângulo de rotação em X
+ay = 40; % Ângulo de rotação em Y
+az = 50; % Ângulo de rotação em Z
 
 cx = cosd(ax);
 sx = sind(ax);
