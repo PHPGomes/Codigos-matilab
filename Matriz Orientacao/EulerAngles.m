@@ -26,9 +26,9 @@ Ry = [cy 0 sy;0 1 0;-sy 0 cy];
 Rz = [cz -sz 0;sz cz 0;0 0 1];
 
 %% Parametros (4x4) rot+pos
-ax = 0; % Ângulo de rotação em X
+ax = 60; % Ângulo de rotação em X
 ay = 0; % Ângulo de rotação em Y
-az = 0; % Ângulo de rotação em Z
+az = 60; % Ângulo de rotação em Z
 
 cx = cosd(ax);
 sx = sind(ax);
@@ -40,8 +40,8 @@ cz = cosd(az);
 sz = sind(az);
 
 qx = 0;
-qy = 0;
-qz = 0;
+qy = 6;
+qz = 3;
 w = 1;
 
 Rx = [1 0 0 qx;0 cx -sx qy;0 sx cx qz;0 0 0 w];
