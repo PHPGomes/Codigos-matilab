@@ -5,7 +5,7 @@ clear
 clc
 
 %% Matriz Esférica
-T = [1 0 0 3.1375;0 1 0 2.195;0 0 1 3.214;0 0 0 1]; %Colocar a Matriz dada aqui
+T = [0 0 1 573;0 -1 0 0;1 0 0 440;0 0 0 1]; %Colocar a Matriz dada aqui
 
 %% Parametros da Matriz
 x = T(1,4);

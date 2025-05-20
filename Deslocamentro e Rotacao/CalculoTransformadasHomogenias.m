@@ -7,7 +7,7 @@ clc
 %% Rotação ou translação de um frame + posição dada em relação ao frame B e quero descobrir em relação a A 
 
 % angulo de rotacao
-teta = 90;
+teta = 0;
 
 % CALCULO SIN E COS
 sin = sind(teta);
@@ -19,15 +19,15 @@ Ry = [cos 0 sin 0;0 1 0 0;-sin 0 cos 0;0 0 0 1];
 Rz = [cos -sin 0 0;sin cos 0 0; 0 0 1 0;0 0 0 1];
 
 % Criação Vetor Posição (Em relação ao frame B)
-x = 1;
-y = 1;
-z = 1; 
+x = 0;
+y = 0;
+z = 0; 
 w = 1; %Fator de escalamento (normalmente usar 1)
 vp = [x;y;z;w];
 
 % Paramentro de deslocamento para Matriz Translação
-qx = 3;
-qy = 5;
+qx = 0;
+qy = 0;
 qz = 0;
 
 % Criação Matriz Translação
