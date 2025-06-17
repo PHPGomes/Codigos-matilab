@@ -41,3 +41,5 @@ Rz2 = [cos2 -sin2 0;sin2 cos2 0; 0 0 1];
 % fora e primeiro mais para dentro")
 r = Ry2*Rz1*p;
 disp(r);
+r2 = Ry(teta2)*Rz(teta1)*p
+
