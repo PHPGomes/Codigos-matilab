@@ -5,6 +5,6 @@ clc
 
 %% Equação espaço de estados
 % A*X=B
-A = [25 125;10 75];
-B = [-55;0];
+A = [9 27;6 27];
+B = [30;0];
 C = inv(A)*B
