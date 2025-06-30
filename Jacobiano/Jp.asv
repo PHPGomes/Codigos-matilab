@@ -1,0 +1,3 @@
+function jp = Jp(Zi)
+jp = [zi;0];
+end
