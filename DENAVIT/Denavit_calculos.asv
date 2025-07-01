@@ -14,7 +14,7 @@ a5 = 0;
 a6 = 0;
 
 % alpha
-alpha1 = 90;
+alpha1 = -90;
 alpha2 = 0;
 alpha3 = 90;
 alpha4 = -90;
