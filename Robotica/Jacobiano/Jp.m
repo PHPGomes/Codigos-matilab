@@ -1,3 +1,4 @@
 function jp = Jp(zi)
-jp = [zi;0];
+jp = [zi;zeros(3,1)];
 end
+

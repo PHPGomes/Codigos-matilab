@@ -48,12 +48,12 @@ Z4 = T04(1:3,3);
 Z5 = T05(1:3,3);
 
 % Cálculo das colunas do Jacobiano
-Jv1 = (cross(Z0, O6 - O0));
-Jv2 = (cross(Z1, O6 - O1));
-Jv3 = (cross(Z2, O6 - O2));
-Jv4 = (cross(Z3, O6 - O3));
-Jv5 = (cross(Z4, O6 - O4));
-Jv6 = (cross(Z5, O6 - O5));
+Jv1 = Jr(Z0,O6,O0);
+Jv2 = Jr(Z1,O6,O1);
+Jv3 = Jr(Z2,O6,O2);
+Jv4 = Jr(Z3,O6,O3);
+Jv5 = Jr(Z4,O6,O4);
+Jv6 = Jr(Z5,O6,O5);
 
 Jw1 = Z0; Jw2 = Z1; Jw3 = Z2;
 Jw4 = Z3; Jw5 = Z4; Jw6 = Z5;
