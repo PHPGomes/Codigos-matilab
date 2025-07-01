@@ -14,24 +14,24 @@ a5 = 0;
 a6 = 0;
 
 % alpha
-alpha1 = 90;
-alpha2 = 0;
-alpha3 = 90;
-alpha4 = -90;
-alpha5 = 90;
+alpha1 = -90;
+alpha2 = 180;
+alpha3 = -90;
+alpha4 = 90;
+alpha5 = -90;
 alpha6 = 0;
 
 % d
 d1 = 330;
 d2 = 0;
 d3 = 0;
-d4 = 305;
+d4 = -305;
 d5 = 0;
-d6 = 86.5;
+d6 = -86.5;
 
 % teta
 teta1 = 0;
-teta2 = 90;
+teta2 = -90;
 teta3 = 0;
 teta4 = 0;
 teta5 = 0;
