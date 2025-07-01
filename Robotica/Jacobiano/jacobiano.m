@@ -48,6 +48,9 @@ Z4 = T04(1:3,3);
 Z5 = T05(1:3,3);
 
 % Cálculo das colunas do Jacobiano
+% Atenção: 
+% Para Rotacional -> Jvi = Jr(Zi-1,On,Oi-1) 
+% Para Prismatica -> Jvi = Jp(Z1-1)
 Jv1 = Jr(Z0,O6,O0);
 Jv2 = Jr(Z1,O6,O1);
 Jv3 = Jr(Z2,O6,O2);
