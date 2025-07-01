@@ -62,8 +62,9 @@ Jw1 = Z0; Jw2 = Z1; Jw3 = Z2;
 Jw4 = Z3; Jw5 = Z4; Jw6 = Z5;
 
 % Jacobiano 6x6
-J = ([Jv1 Jv2 Jv3 Jv4 Jv5 Jv6;
-              Jw1 Jw2 Jw3 Jw4 Jw5 Jw6]);
+%J = ([Jv1 Jv2 Jv3 Jv4 Jv5 Jv6;
+%              Jw1 Jw2 Jw3 Jw4 Jw5 Jw6]);
+J = ([Jv1 Jv2 Jv3 Jv4 Jv5 Jv6]);
 
 % ---------- Exibir ----------
 disp('Matriz de Posição Final (T06):');
