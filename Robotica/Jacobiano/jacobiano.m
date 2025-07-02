@@ -2,12 +2,12 @@ clc; clear; close all;
 
 
 % Comprimentos dos elos (valores genéricos)
-a1 = 0;     d1 = 0.4;     alpha1 = 0;     theta1 = 0;
-a2 = 0.25;  d2 = 0;       alpha2 = 0;         theta2 = 0;
-a3 = 0.25;  d3 = 0;       alpha3 = 0;         theta3 = 0;
-a4 = 0;     d4 = 0.4;     alpha4 = 0;      theta4 = 0;
-a5 = 0;     d5 = 0;       alpha5 = 0;     theta5 = 0;
-a6 = 0;     d6 = 0.1;     alpha6 = 0;         theta6 = 0;
+a1 = 0;     d1 = 330;     alpha1 = -90;     theta1 = 10;
+a2 = 305;  d2 = 0;       alpha2 = 0;         theta2 = -90;
+a3 = 0;    d3 = 0;       alpha3 = -90;         theta3 = -90;
+a4 = 0;     d4 = 330;     alpha4 = 90;      theta4 = 0;
+a5 = 0;     d5 = 0;       alpha5 = -90;     theta5 = 40;
+a6 = 0;     d6 = 76;     alpha6 = 0;         theta6 = 180;
 
 
 % Matrizes de transformação homogênea
@@ -72,3 +72,25 @@ disp((T06))
 
 disp('Jacobiano Geométrico J:');
 disp(J)
+
+
+%% VELOCIDADE
+q = [2;4;1;1;0;2];
+vel = J * q;
+disp(vel);
+
+
+%%
+r = 20;
+b = 60;
+y = 30;
+
+dr = 2;
+db = 0.05;
+dy = 0.1;
+
+a = [sind(b)*cosd(y) r*cosd(b)*cosd(y) -r*sind(b)*sind(y);sind(b)*sind(y) r*cosd(b)*sind(y) r*sind(b)*cosd(y);cosd(b) -r*sind(b) 0];
+
+d = [dr;db;dy];
+
+vel = a*d;

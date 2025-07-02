@@ -2,20 +2,20 @@
 clear
 clc
 
-%% Parametros
+% Parametros
 % teta,d,a,alpha
 
 % a
-a1 = 88;
-a2 = 310;
-a3 = 40;
+a1 = 0;
+a2 = 305;
+a3 = 0;
 a4 = 0;
 a5 = 0;
 a6 = 0;
 
 % alpha
 alpha1 = -90;
-alpha2 = 180;
+alpha2 = 0;
 alpha3 = -90;
 alpha4 = 90;
 alpha5 = -90;
@@ -25,17 +25,17 @@ alpha6 = 0;
 d1 = 330;
 d2 = 0;
 d3 = 0;
-d4 = -305;
+d4 = 330;
 d5 = 0;
-d6 = -86.5;
+d6 = 76;
 
 % teta
-teta1 = 0;
+teta1 = 10;
 teta2 = -90;
-teta3 = 0;
+teta3 = -90;
 teta4 = 0;
-teta5 = 0;
-teta6 = 0;
+teta5 = 40;
+teta6 = 180;
 
 H01 = Denavit(teta1,d1,a1,alpha1)
 H12 = Denavit(teta2,d2,a2,alpha2)
