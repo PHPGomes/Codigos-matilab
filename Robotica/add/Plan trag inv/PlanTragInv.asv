@@ -22,8 +22,6 @@ A = [1 0 0 0; 0 1 0 0; 1 tf tf^2 tf^3; 0 1 2*tf 3*tf^2]
 X = A\B
 
 %% quinto grau
-acel = 10;
-
 theta = atan2d(Mi(2,1),Mi(1,1))
 rsb = Mi(1,1)/cosd(theta);
 beta = atan2d(rsb,Mi(3,3));
@@ -36,7 +34,15 @@ r2 = Mf(3,3)/cosd(beta);
 
 c0 = theta;
 c1 = 0;
-c2 = acel/2;
-B = [theta2-c0-c1*tf-c2*tf^2,-c1-2*c2*tf, -acel-2*c2]';
-A = [tf^3 tf^4 tf^5; 3*tf^2 4*tf^3 5*tf^4; 6*tf 12*tf^2 20*tf^3];
-X = [c0;c1;c2;A\B]
+  c2 = acel/2;
+           B = [theta2-c0-c1tf-c2tf^2,-c1-2c2tf, -acel-2c2]';
+           A = [tf^3 tf^4 tf^5; 3tf^2 4tf^3 5tf^4; 6tf 12tf^2 20*tf^3];
+           X = [c0;c1;c2;A\B];
+%%
+
+c0 = theta;
+           c1 = 0;
+           c2 = acel/2;
+           B = [theta2-c0-c1tf-c2tf^2,-c1-2c2tf, -acel-2c2]';
+           A = [tf^3 tf^4 tf^5; 3tf^2 4tf^3 5tf^4; 6tf 12tf^2 20*tf^3];
+           X = [c0;c1;c2;A\B];
