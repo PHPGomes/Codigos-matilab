@@ -20,5 +20,5 @@ theta = 20;
 % 𝜓
 psi = 30;
 
-r = Rz(psi)*Ry(theta)*Rz(phi)
+r = Rz(phi)*Ry(theta)*Rz(psi)
 
