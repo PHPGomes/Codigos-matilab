@@ -3,15 +3,14 @@ clear
 clc
 
 %% Variaveis
-r = 4.33; % Translação em X
-alpha = 2.5; % Rotação em Z (Normalmente) (Graus)
-L = 8; % Translação em Z
+r = 0; % Translação em X
+alpha = 0; % Rotação em Z (Normalmente) (Graus)
+L = 0; % Translação em Z
 
 %% Padão rotação ZXZ (Mais usado) 
- Rz = [cosd(alpha), -sind(alpha), 0, 0;
-      sind(alpha), cosd(alpha), 0, 0;
-       0, 0, 1, 0;
-       0, 0, 0, 1]
+ Rz = [cosd(alpha), -sind(alpha), 0;
+      sind(alpha), cosd(alpha), 0;
+       0, 0, 1]
 
 %Variaveis
 x = r;
@@ -30,7 +29,6 @@ Tr = [1, 0, 0, x;
      0, 0, 0, 1]
 
 R = Tl*Rz*Tr
-
 %% Mudança eixo Giro Para X
 Rx = [1, 0, 0;
      0, cosd(alpha), -sind(alpha);
