@@ -1,0 +1,3 @@
+function jr = Jr(zi,on,oi)
+jr = [cross(zi,(on-oi));zi];
+end
