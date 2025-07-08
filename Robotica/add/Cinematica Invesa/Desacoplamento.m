@@ -15,4 +15,3 @@ pc = d0a6 - d6*R0a6*K;
 Px = pc(1,1)
 Py = pc(2,1)
 Pz = pc(3,1)
-
