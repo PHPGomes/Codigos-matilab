@@ -3,9 +3,9 @@ clear
 clc
 
 %% Matriz
-Mi = [1 0 0 0; 0 1 0 0 ; 0 0 1 0;0 0 0 1] % Matriz Padrão 4x4 (Dado no exercicio)
+Mi = [0 0.5 sqrt(3)/2 392.79; 0 -sqrt(3)/2 0.5 226.78;1 0 0 878.55; 0 0 0 1] % Matriz Padrão 4x4 (Dado no exercicio)
 Mf = [1 0 0 0; 0 1 0 0 ; 0 0 1 0;0 0 0 1] % Matriz Padrão 4x4 (Dado no exercicio ou trabalhado pela Mi)
-tf = 5 % dado pelo exercicio (Tempo final)
+tf = 8 % dado pelo exercicio (Tempo final)
 %% terceiro grau
 gamma = atan2d(Mi(2,1),Mi(1,1));
 rsb = Mi(1,1)/cosd(gamma);
@@ -33,7 +33,7 @@ theta2 = atan2d(Mf(2,1),Mf(1,1))
 rsb2 = Mf(1,1)/cosd(theta);
 beta2 = atan2d(rsb,Mf(3,3));
 r2 = Mf(3,3)/cosd(beta);
-
+theta2 = 150
 c0 = theta;
 c1 = 0;
 c2 = acel/2;

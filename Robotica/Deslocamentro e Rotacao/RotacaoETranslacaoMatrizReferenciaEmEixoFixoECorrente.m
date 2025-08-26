@@ -67,3 +67,9 @@ R = Rz1*Ry2*B*Trans*Rz3;
 
 % Matriz Resultante
 disp(R)
+
+
+%% Q3 Rascunho
+ru = [2;-1;0];
+up = [1;4;0];
+rp = up-ru 

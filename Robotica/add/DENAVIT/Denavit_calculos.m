@@ -7,35 +7,35 @@ clc
 
 % a (sempre absoluto) a>0 se der negativo pegar modulo
 a1 = 0;
-a2 = 305;
-a3 = 0;
-a4 = 0;
+a2 = 320;
+a3 = 975;
+a4 = 200;
 a5 = 0;
 a6 = 0;
 
 % alpha
-alpha1 = -90;
-alpha2 = 0;
-alpha3 = -90;
+alpha1 = 0;
+alpha2 = -90;
+alpha3 = 0;
 alpha4 = 90;
-alpha5 = -90;
-alpha6 = 0;
+alpha5 = 90;
+alpha6 = -90;
 
 % d
-d1 = 330;
-d2 = 0;
+d1 = 0;
+d2 = 680;
 d3 = 0;
-d4 = 330;
-d5 = 0;
-d6 = 76;
+d4 = 0;
+d5 = 1087;
+d6 = 0;
 
 % teta
-teta1 = 10;
-teta2 = -90;
-teta3 = -90;
-teta4 = 0;
-teta5 = 40;
-teta6 = 180;
+teta1 = 25;
+teta2 = 40;
+teta3 = 150;
+teta4 = 90;
+teta5 = 180;
+teta6 = 30;
 
 H01 = Denavit(teta1,d1,a1,alpha1)
 H12 = Denavit(teta2,d2,a2,alpha2)
