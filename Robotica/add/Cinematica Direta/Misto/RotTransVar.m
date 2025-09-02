@@ -8,7 +8,7 @@ B = Trans(0,0,0)
 % Calculo 
 % Como calcular:
 % inicialmente Coloque o referencial B 
-% Logo após vá adicionando a direita do referencial os correntes e a
+% Logo apos vai adicionando a direita do referencial os correntes e a
 % esquerda os fixos, SEMPRE nas estremidades, seguindo a sequencia do
 % exercicio
 
