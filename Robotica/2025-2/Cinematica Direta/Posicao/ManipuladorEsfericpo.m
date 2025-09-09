@@ -1,4 +1,4 @@
-%% Cinemática Inversa Manipulador Esférico
+%% Cinemática Inversa Manipulador Esférico (OLhar e refazer esse )
 
 %% Clear
 clear
@@ -18,6 +18,7 @@ gamma = atan2d(y, x); % azimute (ângulo no plano xy)
 beta = atan2d(sqrt(x^2 + y^2), z); % elevação (ângulo com z)
 
 
+%%
 disp('r:');
 disp(r);
 disp('gamma:');
