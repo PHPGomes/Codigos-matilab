@@ -5,7 +5,7 @@ clear
 clc
 
 %% Matriz Esférica
-T = [0 0 1 20;0 -1 0 10;1 0 0 70;0 0 0 1]; %Colocar a Matriz dada aqui
+T = [1 0 0 3.1375;0 1 0 2.195; 0 0 1 3.214; 0 0 0 1]; %Colocar a Matriz dada aqui
 
 %% Parametros da Matriz
 x = T(1,4);
@@ -19,9 +19,11 @@ beta = atan2d(sqrt(x^2 + y^2), z); % elevação (ângulo com z)
 
 
 %%
-disp('r:');
-disp(r);
 disp('gamma:');
 disp(gamma);
+
 disp('beta:');
 disp(beta);
+
+disp('r:');
+disp(r);
