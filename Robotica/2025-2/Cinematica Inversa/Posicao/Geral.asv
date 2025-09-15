@@ -3,8 +3,7 @@ clear
 clc
 
 %% Matriz
-M = [1;5;4;1];
+M = [0 1 0 1;1 0 0 1;0 0 -1 1;0 0 0 1]
 
-%% Ex Operações (Matriz M recebeu uma rotação z de 30 depois umas y de 60)
-
-T = Rz(90)*Rx(90)*M*trans
+%% Operações (Colocar a matriz M primeiro e ir adicionando os movimentos nas extremidades, fixos antes e correntes depois)
+T = Ry(90)*Rz(90)*M*Trans(3,5,0)*Rx()

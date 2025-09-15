@@ -5,9 +5,9 @@ clear
 clc
 
 %% Paremetros
-r = 15; % Distância radial (do centro ao ponto)
-beta = 11; % Ângulo de inclinação (tipo latitude, ângulo com o eixo Z)
-y = 12; % Ângulo de rotação em torno do eixo Z (tipo longitude).
+r = 5; % Distância radial (do centro ao ponto)
+beta = 50; % Ângulo de inclinação (tipo latitude, ângulo com o eixo Z)
+y = 35; % Ângulo de rotação em torno do eixo Z (tipo longitude).
 
 cb = cosd(beta);
 sb = sind(beta);
