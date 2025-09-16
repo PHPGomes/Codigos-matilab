@@ -10,4 +10,4 @@ T = Ry(90)*Rz(90)*M*Trans(3,5,0)*Rx(90)
 
 
 %%
-H = Rx(45)*Rz(60)*Trans(0,0,3)*Trans(0,6,0)*Rx(60)
+H = Trans(0,0,-3)*Trans(0,0,5)*Rx(45)*Ry(60)*Trans(0,0,5)*Rx(90)
