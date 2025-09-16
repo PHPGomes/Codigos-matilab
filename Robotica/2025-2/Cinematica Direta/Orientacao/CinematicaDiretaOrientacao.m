@@ -22,9 +22,11 @@ px = R(1,4);
 py = R(2,4);
 pz = R(3,4);
 
-fprintf('phiN = %.2f°\n', phiN);
+fprintf('phiA = %.2f°\n', phiN);
 fprintf('phiO = %.2f°\n', phiO);
-fprintf('phiA = %.2f°\n', phiA);
+fprintf('phiN = %.2f°\n', phiA);
+
+
 fprintf('Px = %f\n', px);
 fprintf('Py = %f\n', py);
 fprintf('Pz = %f\n', pz);
@@ -47,7 +49,7 @@ pz = R(3,4);
 
 % Exibição
 fprintf('phi (Z1) = %.2f°\n', phi);
-fprintf('theta (Y) = %.2f°\n', theta);
+fprintf('alfa (Y) = %.2f°\n', theta);
 fprintf('psi (Z2) = %.2f°\n', psi);
 fprintf('Px = %.2f\n', px);
 fprintf('Py = %.2f\n', py);
