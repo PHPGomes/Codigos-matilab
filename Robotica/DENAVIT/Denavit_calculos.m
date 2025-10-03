@@ -7,8 +7,8 @@ clc
 
 % a
 a1 = 0;
-a2 = 305;
-a3 = 0;
+a2 = 270;
+a3 = 70;
 a4 = 0;
 a5 = 0;
 a6 = 0;
@@ -22,19 +22,19 @@ alpha5 = -90;
 alpha6 = 0;
 
 % d
-d1 = 330;
+d1 = 290;
 d2 = 0;
 d3 = 0;
-d4 = 330;
+d4 = 302;
 d5 = 0;
-d6 = 76;
+d6 = 72;
 
 % teta
-teta1 = 10;
+teta1 = 0;
 teta2 = -90;
-teta3 = -90;
+teta3 = 0;
 teta4 = 0;
-teta5 = 40;
+teta5 = 0;
 teta6 = 180;
 
 H01 = Denavit(teta1,d1,a1,alpha1)
