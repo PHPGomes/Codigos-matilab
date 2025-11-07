@@ -9,7 +9,7 @@ clc
 
 %% Matriz Matriz de rotação (ou extraída de matriz homogênea)
 
-R = [0 0 1 573;0 -1 0 0;1 0 0 440;0 0 0 1];
+R = [0.26 -0.97 0;0.97 0.26 0;0 0 1];
 
 %% Parametros da Matriz
 
