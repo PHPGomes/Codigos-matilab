@@ -1,4 +1,4 @@
-%% clear
+    %% clear
 clear
 clc
 
@@ -6,36 +6,36 @@ clc
 % teta,d,a,alpha
 
 % a
-a1 = 88;
-a2 = 310;
-a3 = 40;
+a1 = 400;
+a2 = 750;
+a3 = 250;
 a4 = 0;
 a5 = 0;
 a6 = 0;
 
 
 % alpha
-alpha1 = -90;
-alpha2 = 180;
-alpha3 = -90;
+alpha1 = 90;
+alpha2 = 0;
+alpha3 = 90;
 alpha4 = 90;
-alpha5 = -90;
+alpha5 = 90;
 alpha6 = 0;
 
 % d
-d1 = 330;
+d1 = 750;
 d2 = 0;
 d3 = 0;
-d4 = -305;
+d4 = 812.4;
 d5 = 0;
-d6 = -80;
+d6 = 175;
 
 % teta
-teta1 = 100;
-teta2 = -90;
-teta3 = 88;
+teta1 = 0;
+teta2 = 90;
+teta3 = 0;
 teta4 = 0;
-teta5 = 0;
+teta5 = 180;
 teta6 = 0;
 
 H01 = Denavit(teta1,d1,a1,alpha1)
