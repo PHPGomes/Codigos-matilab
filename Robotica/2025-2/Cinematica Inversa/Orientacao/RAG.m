@@ -14,3 +14,10 @@ T = [cos(theta) -sin(theta) 0 a*cos(theta);
 
 disp('Matriz de Transformação Homogênea RAG(10,20,50):');
 disp(T);
+
+%%
+a = [1 0 0 392.79;0 1 0 266.78; 0 0 1 878.55;0 0 0 1];
+
+b = [0 0.5 sqrt(3)/2 392.79;0 -sqrt(3)/2 0.5 266.78;1 0 0 878.55;0 0 0 1];
+
+T = inv(a)*b
