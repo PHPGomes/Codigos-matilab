@@ -2,12 +2,12 @@ clc; clear; close all;
 
 
 % Comprimentos dos elos (valores genéricos)
-a1 = 0;     d1 = 0.4;     alpha1 = 0;         theta1 = 0;
-a2 = 0.25;  d2 = 0;       alpha2 = 0;         theta2 = 0;
-a3 = 0.25;  d3 = 0;       alpha3 = 0;         theta3 = 0;
-a4 = 0;     d4 = 0.4;     alpha4 = 0;         theta4 = 0;
+a1 = 2;     d1 = 5;     alpha1 = 0;         theta1 = 30;
+a2 = 2;     d2 = 2;       alpha2 = 0;         theta2 = 50;
+a3 = 0;  d3 = 0;       alpha3 = 0;         theta3 = 0;
+a4 = 0;     d4 = 0;     alpha4 = 0;         theta4 = 0;
 a5 = 0;     d5 = 0;       alpha5 = 0;         theta5 = 0;
-a6 = 0;     d6 = 0.1;     alpha6 = 0;         theta6 = 0;
+a6 = 0;     d6 = 0;     alpha6 = 0;         theta6 = 0;
 
 
 % Matrizes de transformação homogênea
