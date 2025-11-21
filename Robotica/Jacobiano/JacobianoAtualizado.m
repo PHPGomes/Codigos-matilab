@@ -57,4 +57,13 @@ H04 = H03*H34
 H05 = H04*H45
 H06 = H05*H56
 
-%% Jacobiano Ji
+%% Parametros Jacobiano Ji
+
+
+% Variaveis Zi_1 
+
+
+% Variaveis Oi_1
+
+
+% Variavel On
