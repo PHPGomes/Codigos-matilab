@@ -46,24 +46,46 @@ H34 = Denavit(teta4,d4,a4,alpha4);
 H45 = Denavit(teta5,d5,a5,alpha5);
 H56 = Denavit(teta6,d6,a6,alpha6);
 
-T = H01*H12*H23*H34*H45*H56
+T = H01*H12*H23*H34*H45*H56;
 
 %% H 0 a n
 
-H01
-H02 = H01*H12
-H03 = H02*H23
-H04 = H03*H34
-H05 = H04*H45
-H06 = H05*H56
+H01;
+H02 = H01*H12;
+H03 = H02*H23;
+H04 = H03*H34;
+H05 = H04*H45;
+H06 = H05*H56;
 
 %% Parametros Jacobiano Ji
 
-
 % Variaveis Zi_1 
-
+Z0 = [0;0;1];
+Z1 = H01(1:3,3);
+Z2 = H02(1:3,3);
+Z3 = H03(1:3,3);
+Z4 = H04(1:3,3);
+Z5 = H05(1:3,3);
 
 % Variaveis Oi_1
-
+O0 = [0;0;1];
+O1 = H01(1:3,4);
+O2 = H02(1:3,4);
+O3 = H03(1:3,4);
+O4 = H04(1:3,4);
+O5 = H05(1:3,4);
 
 % Variavel On
+ON = H06(1:3,4);
+
+%% Calculo Matriz Jacobiana
+
+% Calculo Ji
+J1 = Jr(Z0,ON,O0);
+J2 = Jr(Z1,ON,O1);
+J3 = Jr(Z2,ON,O2);
+J4 = Jr(Z3,ON,O3);
+J5 = Jr(Z4,ON,O4);
+J6 = Jr(Z5,ON,O5);
+
+J = [J1 J2 J3 J4 J5 J6]
