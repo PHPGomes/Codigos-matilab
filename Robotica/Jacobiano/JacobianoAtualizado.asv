@@ -90,6 +90,21 @@ J6 = Jr(Z5,ON,O5);
 
 J = [J1 J2 J3 J4 J5 J6]
 
-%% Jacobiano
+%% Jacobiano Velocidade end-efector
 Qponto = [0;0;0;0;0;0];
 Jac = J*Qponto;
+
+
+%%
+[cosd(30) -15*sind(30) 0;sind(30) 15*cosd(30) 0;0 0 1]*[0.1;0.05;0.2];
+%%
+y = 30;
+b = 60;
+r = 20;
+dr = 2;
+db = 0.05;
+dy = 0.1;
+
+j = [sind(b)*cosd(y) r*cosd(b)*cosd(y) -r*sind(b)*sind(y);sind(b)*sind(y) r*cosd(b)*sind(y) r*sind(b)*cosd(y);cosd(b) -r*sind(b) 0];
+Qp = [dr;db;dy];
+j*Qp
