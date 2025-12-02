@@ -18,5 +18,8 @@ T = Rx(45)*Rz(60)*Trans(0,0,3)*B*Trans(0,6,0)*Rn(60);
 %%
 Trans(0,0,7)*Rz(21.8)*Trans(10.77,0,0)
 
+%%
+syms x y z teta x2 y2 z2
 
+Trans(x,y,z)*Rz(teta)*Trans(x2,y2,z2)
 
