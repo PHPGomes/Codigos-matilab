@@ -23,19 +23,19 @@ alpha5 = -90;
 alpha6 = 0;
 
 % d
-d1 = 540;
+d1 = 680;
 d2 = 0;
 d3 = 0;
-d4 = -1025;
+d4 = 880;
 d5 = 0;
-d6 = -175;
+d6 = 140;
 
 % teta
-teta1 = 10;
-teta2 = 100-90;
-teta3 = 50;
-teta4 = 0;
-teta5 = 40;
+teta1 = 90;
+teta2 = 00;
+teta3 = 0;
+teta4 = 100;
+teta5 = 10;
 teta6 = 0;
 
 H01 = Denavit(teta1,d1,a1,alpha1)
